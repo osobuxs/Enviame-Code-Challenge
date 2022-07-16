@@ -17,3 +17,6 @@ Para ejecutar el ejercicio:
 2. Entrar a la carpeta punto_3
 3. Instalar las dependencias con **npm install**
 4. Para iniciar la aplicacion con **npm start**
+
+#### NOTAS:
+Se agrega el archivo .env ya que contiene las keys necesarias para consumir la API de Marvel.
