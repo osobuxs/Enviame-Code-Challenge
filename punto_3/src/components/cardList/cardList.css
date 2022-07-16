@@ -1,0 +1,40 @@
+.centro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  transition: border-style ;
+  background-color: rgba(225, 209, 209, 0.846);
+  
+}
+.centro:hover{
+ 
+  border-style: dashed;
+  transform: scale(1.1);
+}
+
+.titulo {
+  text-align: center;
+  font-family: Comic Sans MS;
+  color: #ebd758;
+  text-shadow: -1px 0 #414d68, 0 1px #414d68, 1px 0 #414d68, 0 -1px #414d68,
+    -2px 2px 0 #414d68, 2px 2px 0 #414d68, 1px 1px #414d68, 2px 2px #414d68,
+    3px 3px #414d68, 4px 4px #414d68, 5px 5px #414d68;
+}
+.descripcion {
+  font-weight: bold;
+}
+.crearHeroe{
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 10px;
+
+  
+}
+.botonCrearHeroe{
+  margin-top: 1%;
+}
