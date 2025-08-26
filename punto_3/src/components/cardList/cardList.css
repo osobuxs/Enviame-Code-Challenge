@@ -1,3 +1,4 @@
+/* src/components/cardList/cardList.css */
 .centro {
   display: flex;
   flex-direction: column;
@@ -7,16 +8,13 @@
   margin-right: auto;
   margin-bottom: 5%;
   margin-top: 2%;
-  transition: border-style ;
+  transition: border-style;
   background-color: rgba(225, 209, 209, 0.846);
-  
 }
-.centro:hover{
- 
+.centro:hover {
   border-style: dashed;
   transform: scale(1.1);
 }
-
 .titulo {
   text-align: center;
   font-family: Comic Sans MS;
@@ -28,13 +26,82 @@
 .descripcion {
   font-weight: bold;
 }
-.crearHeroe{
+.crearHeroe {
   display: flex;
   flex-direction: column;
   grid-row-gap: 10px;
-
-  
 }
-.botonCrearHeroe{
+.botonCrearHeroe {
   margin-top: 1%;
+}
+
+/* Loader y Empty state */
+.loaderText {
+  text-align: center;
+  margin: 16px 0;
+}
+.emptyState {
+  text-align: center;
+  font-weight: bold;
+  margin: 24px 0;
+}
+
+/* Overlay de carga para generación de imagen */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 20, 20, 0.45);
+  backdrop-filter: blur(1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.modalBox {
+  background: #fff;
+  padding: 18px 22px;
+  border-radius: 12px;
+  min-width: 260px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.modalText {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Spinner */
+.spinner {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #ccc;
+  border-top-color: #e11d48;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* 🆕 Botón "Volver arriba" */
+.backTopBtn {
+  position: fixed;
+  right: 18px;
+  bottom: 24px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 999px;
+  background: #1f2937; /* gris oscuro */
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  z-index: 998;
+}
+.backTopBtn:hover {
+  transform: translateY(-2px);
 }
