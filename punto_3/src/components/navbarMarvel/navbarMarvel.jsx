@@ -1,12 +1,13 @@
 import React from "react";
 import "./navbarMarvel.css";
+import logo from "../../assets/marvel-logo.png";
 
 function NavbarMarvel() {
   return (
     <div>
       <img
         alt=""
-        src="https://clothesandgames.com/wp-content/uploads/2020/12/marvel-logo.png"
+        src={logo}
         width="210"
         height="70"
         className="logoNav"
