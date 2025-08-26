@@ -1,6 +1,21 @@
-.editInfoHeroe{
+/* src/components/cardMarvel/cardMarvel.css */
+.editInfoHeroe {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+/* 🆕 Bloque de stats */
+.stats {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 4px;
+  font-size: 0.95rem;
+}
+.modified {
+  margin-top: 8px;
+  font-size: 0.875rem;
+  opacity: 0.8;
 }
