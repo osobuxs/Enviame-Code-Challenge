@@ -1,16 +1,26 @@
 .App {
   text-align: center;
 }
-.centre{
+
+/* 🆕 Que el contenedor rojo cubra toda la pantalla */
+.colorAf {
+  background-color: rgb(187, 41, 41);
+  min-height: 100vh;        /* ocupa todo el alto */
+  display: flex;
+  justify-content: center;  /* centra el panel rosa horizontal */
+}
+
+/* Panel central rosado */
+.centre {
   padding: 0 8px;
   margin: 0 auto;
   max-width: 64em;
   width: 100%;
   background-color: rgb(237, 146, 146);
+  min-height: 100vh;        /* 🆕 evita “corte” y que se vea blanco abajo */
+  box-sizing: border-box;   /* por las paddings */
 }
-.colorAf{
-  background-color: rgb(187, 41, 41);
-}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
